@@ -64,13 +64,13 @@ class Person
   end
 
   def start_conversation(person, topic)
-    @person = friend
+    @person = person
     if topic == "politics"
-      friend.happiness +=2
+      @person.happiness +=2
       self.happiness +=2
       return "blah blah partisan blah lobbyist"
     elsif topic == "weather"
-      friend.happiness +=2
+      @person.happiness +=2
       self.happiness +=2
       return "blah blah sun blah rain"
     end
