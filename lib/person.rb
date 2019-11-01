@@ -66,10 +66,10 @@ class Person
     @topic = topic
     topic = ["politic", "weather"]
     if topic == "politics"
-      happiness -=2
+      return happiness -=2
       return "blah blah partisan blah lobbyist"
     elsif topic == "weather"
-      happiness +=1
+      return happiness +=1
       return "blah blah sun blah rain"
     else topic != "politics" || "weather"
       return "blah blah blah blah blah"
