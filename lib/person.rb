@@ -57,16 +57,16 @@ class Person
     return "♪ another one bites the dust ♫"
   end
 
-  def call_friend(felix)
-    @felix = felix
-    felix.happiness +=3
-    happiness +=3
+  def call_friend(friend)
+    friend = felix
+    friend.happiness +=3
+    self.happiness +=3
     return "Hi Felix! It's Stella. How are you?"
   end
 
-  def start_conversation(felix, topic)
+  def start_conversation(friend, topic)
     @topic = topic
-    @felix = felix
+    friend = felix
     topic = ["politics", "weather", "other"]
     "other" != "politics" || "weather"
     if felix; "politics"
