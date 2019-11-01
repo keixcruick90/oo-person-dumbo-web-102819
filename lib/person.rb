@@ -70,7 +70,7 @@ class Person
       return "blah blah partisan blah lobbyist"
     elsif topic == weather
       return "blah blah sun blah rain"
-    else
+    else topic == other != politics || weather
       return "blah blah blah blah blah".
     end
   end
