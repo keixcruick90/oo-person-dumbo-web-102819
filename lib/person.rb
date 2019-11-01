@@ -57,19 +57,22 @@ class Person
     return "♪ another one bites the dust ♫"
   end
 
-  def call_friend(Felix)
-    @Felix = Felix
-    self.happiness += 3
+  def call_friend(friend, self)
+    @friend = Felix
     Felix.happiness += 3
+    self.happiness +=3
     return "Hi Felix! It's Stella. How are you?"
   end
 
-  def start_conversation
-
+  def start_conversation(topic)
+    @topic = topic
+    if topic == politics
+      return "blah blah partisan blah lobbyist"
+    elsif topic == weather
+      return "blah blah sun blah rain"
+    else
+      return "blah blah blah blah blah".
+    end
   end
 
 end
-
-Felix = Person.new("Felix")
-Felix = Person.name
-Felix
