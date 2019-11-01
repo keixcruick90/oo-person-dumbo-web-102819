@@ -73,6 +73,7 @@ class Person
       return "blah blah sun blah rain"
     if topic = "other"
       return "blah blah blah blah blah"
+    end
   end
 
 end
