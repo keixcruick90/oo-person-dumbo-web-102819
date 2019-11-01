@@ -71,7 +71,7 @@ class Person
     elsif topic = "weather"
       happiness +=1
       return "blah blah sun blah rain"
-    if topic = "other"
+    else topic = "other"
       return "blah blah blah blah blah"
     end
   end
