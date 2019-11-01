@@ -57,7 +57,7 @@ class Person
     return "♪ another one bites the dust ♫"
   end
 
-  def call_friend(friend, self)
+  def call_friend(friend, person)
     @friend = Felix
     Felix.happiness += 3
     person.happiness +=3
