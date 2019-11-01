@@ -68,11 +68,11 @@ class Person
     @topic = topic
     @felix = felix
     topic = ["politics", "weather"]
-    if (@felix, "politics")
+    if @felix, "politics"
       @felix.happiness -=2
       Person.happiness -=2
       return "blah blah partisan blah lobbyist"
-    elsif (@felix, "weather")
+    elsif @felix, "weather"
       @felix.happpiness +=1
       Person.happiness +=1
       return "blah blah sun blah rain"
