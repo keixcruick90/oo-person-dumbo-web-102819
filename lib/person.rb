@@ -67,7 +67,8 @@ class Person
   def start_conversation(felix, topic)
     @topic = topic
     @felix = felix
-    topic = ["politics", "weather"]
+    topic = ["politics", "weather", "other"]
+    "other" != "politics" || "weather"
     if @felix, "politics"
       @felix.happiness -=2
       Person.happiness -=2
@@ -76,7 +77,7 @@ class Person
       @felix.happpiness +=1
       Person.happiness +=1
       return "blah blah sun blah rain"
-    else topic != "politics" || "weather"
+    else @felix, "other"
       return "blah blah blah blah blah"
     end
   end
