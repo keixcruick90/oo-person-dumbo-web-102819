@@ -58,6 +58,8 @@ class Person
   end
 
   def call_friend(felix)
+    @felix = felix
+    @felix.happiness +=3
     happiness +=3
     return "Hi Felix! It's Stella. How are you?"
   end
