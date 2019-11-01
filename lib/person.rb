@@ -65,10 +65,10 @@ class Person
   def start_conversation(felix, topic)
     @topic = topic
     topic = ["politic", "weather"]
-    if topic == "politics"
+    if topic = "politics"
       happiness -=2
       return "blah blah partisan blah lobbyist"
-    elsif topic == "weather"
+    elsif topic = "weather"
       happiness +=1
       return "blah blah sun blah rain"
     else topic != "politics" || "weather"
