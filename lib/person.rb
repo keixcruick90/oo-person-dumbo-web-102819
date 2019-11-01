@@ -57,18 +57,19 @@ class Person
     return "♪ another one bites the dust ♫"
   end
 
-  def call_friend(friend)
+  def call_friend(felix)
     happiness +=3
     return "Hi Felix! It's Stella. How are you?"
   end
 
   def start_conversation(felix, topic)
     @topic = topic
+    @felix = felix
     topic = ["politics", "weather"]
-    if topic == "politics"
+    if (@felix, "politics")
       happiness -=2
       return "blah blah partisan blah lobbyist"
-    elsif topic == "weather"
+    elsif (@felix, "weather")
       happiness +=1
       return "blah blah sun blah rain"
     else topic != "politics" || "weather"
