@@ -62,7 +62,7 @@ class Person
     return "Hi Felix! It's Stella. How are you?"
   end
 
-  def start_conversation(topic)
+  def start_conversation
     @topic = topic
     topic = ["politic", "weather"]
     if topic == "politics"
