@@ -69,10 +69,12 @@ class Person
     @felix = felix
     topic = ["politics", "weather"]
     if (@felix, "politics")
-      happiness -=2
+      @felix.happiness -=2
+      Person.happiness -=2
       return "blah blah partisan blah lobbyist"
     elsif (@felix, "weather")
-      happiness +=1
+      @felix.happpiness +=1
+      Person.happiness +=1
       return "blah blah sun blah rain"
     else topic != "politics" || "weather"
       return "blah blah blah blah blah"
